@@ -14,7 +14,6 @@ int LDR_VALUE=0;
 
 void setup() 
 {
-  //Serial.begin (9600);
   pinMode(ir1,INPUT);
   pinMode(ir2,INPUT);
   pinMode(ir3,INPUT);
@@ -28,17 +27,6 @@ void loop()
   proxy3=digitalRead(ir3);
   LDR_VALUE=analogRead(ldr);
 
-  //Serial.print("SENSOR 1");
-  //Serial.println(proxy1);
-
-  //Serial.print("SENSOR 2");
-  //Serial.println(proxy2);
-
-  //Serial.print("SENSOR 3");
-  //Serial.println(proxy3);
-
-  //Serial.print("LDR");
-  //Serial.println(LDR_VALUE);
 
   if (LDR_VALUE < 150) //IF LIGHT IS NOT ENOUGH SYSTEM WILL WORK
   {
